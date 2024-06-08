@@ -1,5 +1,5 @@
 // use local storage to manage cart data
-const addToDb = id => {
+const addToDb = id => { 
     let shoppingCart = getShoppingCart();
     // add quantity
     const quantity = shoppingCart[id];

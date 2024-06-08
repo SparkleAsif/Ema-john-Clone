@@ -4,6 +4,8 @@ const Cart = ({cart}) => {
     // const cart = props.cart;  methode 1
     // const {cart} =props;         methode 2
 
+    console.log(cart);
+
     let totalPrice=0;
     let totalShipping=0;
     
