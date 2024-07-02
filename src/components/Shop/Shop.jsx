@@ -7,7 +7,7 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => {                 //product load
     fetch("products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
@@ -27,7 +27,7 @@ const Shop = () => {
         // step 4: add the addedproduct to the save Produt
         savedCart.push(addedProduct);
       }
-    //   console.log("Added Product", addedProduct);
+    //   console.log("Added Product", addedProduct);  
     }
     // step 5: set the cart
     setCart(savedCart);
